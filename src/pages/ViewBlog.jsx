@@ -27,7 +27,7 @@ function ViewBlog() {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://localhost:4000/api/getBlog/${id}`,
+            url: `https://arogoai-backend.onrender.com/api/getBlog/${id}`,
             headers: {},
         };
 
@@ -55,7 +55,7 @@ function ViewBlog() {
         let config = {
             method: 'delete',
             maxBodyLength: Infinity,
-            url: `http://localhost:4000/api/deleteBlog/${id}`,
+            url: `https://arogoai-backend.onrender.com/api/deleteBlog/${id}`,
             headers: {},
         };
 
