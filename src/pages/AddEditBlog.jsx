@@ -11,7 +11,7 @@ const AddEditBlog = ({ onClose, isEditing, blogId, onUpdate }) => {
   const getBlogDetails = async () => {
     try {
       const response = await axios.get(
-        `http://localhost:4000/api/getBlog/${blogId}`
+        `https://arogoai-backend.onrender.com/api/getBlog/${blogId}`
       );
       setTitle(response.data.title);
       setDetails(response.data.details);
@@ -31,7 +31,7 @@ const AddEditBlog = ({ onClose, isEditing, blogId, onUpdate }) => {
       let config = {
         method: "get",
         maxBodyLength: Infinity,
-        url: "http://localhost:4000/api/getAllBlogs",
+        url: "https://arogoai-backend.onrender.com/api/getAllBlogs",
         headers: {},
       };
 
@@ -57,7 +57,7 @@ const AddEditBlog = ({ onClose, isEditing, blogId, onUpdate }) => {
     }
 
     try {
-      await axios.post("http://localhost:4000/api/createBlog", {
+      await axios.post("https://arogoai-backend.onrender.com/api/createBlog", {
         title,
         details,
       });
@@ -79,7 +79,7 @@ const AddEditBlog = ({ onClose, isEditing, blogId, onUpdate }) => {
     }
 
     try {
-      await axios.put(`http://localhost:4000/api/editBlog/${blogId}`, {
+      await axios.put(`https://arogoai-backend.onrender.com/api/editBlog/${blogId}`, {
         title,
         details,
       });
