@@ -26,7 +26,7 @@ function HomePage() {
     let config = {
       method: "get",
       maxBodyLength: Infinity,
-      url: "http://localhost:4000/api/getAllBlogs",
+      url: "https://arogoai-backend.onrender.com/api/getAllBlogs",
       headers: {},
     };
 
