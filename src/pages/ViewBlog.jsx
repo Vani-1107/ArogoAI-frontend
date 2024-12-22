@@ -78,7 +78,7 @@ function ViewBlog() {
             <div className='bg-gray-200 rounded-md p-4'>
                 <div className='flex justify-between items-center py-5'>
                     <div className='font-bold text-2xl uppercase'>{title}</div>
-                    <div className='flex gap-3'>
+                    <div className='flex md:flex-row flex-col gap-3'>
                         <div className='px-3 py-2 border border-black rounded-md font-bold' onClick={() => { setIsDialogOpen(true) }}>Edit Blog</div>
                         <div className='px-3 py-2 border border-black rounded-md font-bold' onClick={() => { deleteBlog() }}>Delete Blog</div>
                     </div>
