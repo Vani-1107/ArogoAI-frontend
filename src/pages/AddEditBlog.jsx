@@ -94,7 +94,7 @@ const AddEditBlog = ({ onClose, isEditing, blogId, onUpdate }) => {
 
   return (
     <div className="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 backdrop-blur-sm z-50">
-      <div className="bg-white p-6 rounded-lg w-1/2 min-h-1/2 h-fit shadow-lg relative">
+      <div className="bg-white p-6 rounded-lg w-[90vw] min-h-[90vh] md:w-1/2 md:min-h-1/2 h-fit shadow-lg relative">
         <h2 className="text-2xl font-semibold mb-4">
           {isEditing ? "Edit Blog" : "Add Blog"}
         </h2>
